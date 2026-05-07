@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #81D497;
+  padding: 30px;
+}
+
+nav {
+  margin-bottom: 25px;
+}
+
+button {
+  font-size: 18px;
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background: #78B6C4;
+  color: #6C7AAD;
+}
+
+button:hover {
+  background: #14396f;
+}
+
+.page {
+  display: none;
+}
+
+#home {
+  display: block;
+}
+
+h1 {
+  color: #1b4f9c;
+}
+
+h2 {
+  color: #333;
+}
+
+input {
+  font-size: 18px;
+  padding: 10px;
+  width: 180px;
+  border: 2px solid #1b4f9c;
+  border-radius: 8px;
+}
+
+#message {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+#guessCount {
+  font-size: 18px;
+}
+
+.game-card {
+  background: green;
+  border-radius: 12px;
+  padding: 25px;
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+#story {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+#adventureMessage {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 20px;
+}

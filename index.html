@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nick's Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+  <button onclick="showPage('home')">Home</button>
+  <button onclick="showPage('games')">Games</button>
+  <button onclick="showPage('about')">About Me</button>
+</nav>
+
+<section id="home" class="page">
+  <h1>Nick's Website</h1>
+  <p>Welcome to my website!</p>
+</section>
+
+<section id="games" class="page">
+  <h1>Games</h1>
+  <button onclick="showPage('game1')">Guess a Number</button>
+ <button onclick="showPage('game2')">Choose Your Path</button>
+</section>
+  
+<section id="game1" class="page">
+  <h1>Games</h1>
+  <h1>Number Guessing Game</h1>
+
+<p>I picked a number between 1 and 100. Can you guess it?</p>
+
+<input id="guessInput" type="number" placeholder="Enter your guess" />
+
+<button onclick="checkGuess()">Guess</button>
+<button onclick="newGame()">New Game</button>
+
+<p id="message">Make your first guess!</p>
+<p id="guessCount">Guesses: 0</p>
+</section>
+
+<section id="about" class="page">
+  <h1>About Me</h1>
+  <p>I like sports, LEGO, and video games.</p>
+</section>
+<section id="game2" class="page">
+  <h1>Choose Your Path</h1>
+
+  <div class="game-card">
+    <h2>Simple Adventure Game</h2>
+
+    <p id="story">
+      You are standing at the entrance of a mysterious cave. Do you go inside or walk away?
+    </p>
+
+    <div id="choices">
+      <button onclick="chooseCave()">Go inside</button>
+      <button onclick="chooseWalkAway()">Walk away</button>
+    </div>
+
+    <p id="adventureMessage"></p>
+
+    <button onclick="restartAdventure()">Restart Adventure</button>
+  </div>
+</section>
+
+  <script src="script.js"></script>
+</body>
+</html>
